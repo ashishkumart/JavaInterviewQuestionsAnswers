@@ -20,6 +20,8 @@ There are three categories of Annotations
 
 **3. What is reflection?**
 
+"Java reflection makes it possible to inspect classes, interfaces, fields, and methods at runtime, without knowing the names of clesses, methods etc. at compile time.
+It is also possible to instantiate new objects and get/set the values using reflection."
 
 **4. What is String interning?**
 
