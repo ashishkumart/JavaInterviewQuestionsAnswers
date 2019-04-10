@@ -46,6 +46,42 @@ Note that volatile should not be confused with static modifier. static variables
 
 **7. What is static variable, class and method?**
 
+###### Static Variable
+If a field is declared static, then exactly a single copy of that field is created and shared among all instances of that class.
+It doesn’t matter how many times we initialize a class; there will always be only one copy of static field belonging to it. The value of this static field will be shared across all object of the class
+From the memory perspective, static variables go in a particular pool in JVM memory called **Metaspace**.
+
+When we should use static field?
+*When the value of variable is independent of objects
+*When the value is supposed to be shared across all objects.
+
+###### Static method
+Static methods are generally used to perform an operation that is not dependent upon instance creation.
+If there is a code that is supposed to be shared across all instances of that class, then write that code in a static method.
+static methods are also widely used to create utility or helper classes so that they can be obtained without creating a new object of these classes.
+
+- static methods in Java are resolved at compile time. Since method overriding is part of Runtime Polymorphism, so static methods can’t be overridden
+- abstract methods can’t be static
+- static methods cannot use this or super keywords
+
+The following combinations of the instance, class methods and variables are valid:
+ 1 -Instance methods can directly access both instance methods and instance variables
+ 2 -Instance methods can also access static variables and static methods directly
+ 3 -static methods can access all static variables and other static methods
+ 4 -static methods cannot access instance variables and instance methods directly; they need some object reference to do so.
+
+##### Static class
+Static classes are basically a way of grouping classes together in Java. Java doesn't allow you to create top-level static classes; only nested (inner) static classes.
+
+Reasons to use static inner class
+
+-Grouping classes that will be used only in one place increases encapsulation
+-The code is brought closer to the place that will be only one to use it; this increases readability and code is more maintainable
+-If nested class doesn’t require any access to it’s enclosing class instance members, then it’s better to declare it as static because this way, it won’t be coupled to the outer class and hence will be more optimal as they won’t require any heap or stack memory
+
+-static nested classes do not have access to any instance members of the enclosing outer class; it can only access them through an object’s reference
+-static nested classes can access all static members of the enclosing class, including private ones
+-Java programming specification doesn’t allow us to declare the top-level class as static; only classes within the classes (nested classes) can be made as static
 
 **8. What is static block? When does this get executed?**
 
