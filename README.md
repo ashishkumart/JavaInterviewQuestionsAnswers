@@ -9,44 +9,86 @@ Java SE 12 (March 2019).
 **2. What is Annotation?**
 
 Annotations are tags that we can enter in our program code, for some tool to process it, and make sence of it.
-1) Annotation starts with @
+1) Annotation starts with `@`
 2) Annotation do not change the action of compiled program.
 3) Annotations can change the way a program is teated by compiler 
 
 There are three categories of Annotations
-1) Marker Annotations: like @Override
+1) Marker Annotations: like `@Override`
 2) Single value annotations: 
 3) Full Annotations
 
-###### 3. What is reflection?
-###### 4. What is String interning?
-###### 5. What is difference between Serializable and Externalizable interface?
-###### 6. What is volatile?
-###### 7. What is static variable, class and method?
-###### 8. What is static block? When does this get executed?
-###### 9. What is init block?When does this get executed?
-###### 10. What is thread interning?
-###### 11. What is difference between Annoymous Inner Class and Lambda Exp.?
-###### 12. What are the checked and unchecked exceptions?
-###### 13. What is the difference between exception and error?
-###### 14. What is dependecy injection?
-###### 15. What is HashCode?
+**3. What is reflection?**
+
+
+**4. What is String interning?**
+
+
+**5. What is difference between Serializable and Externalizable interface?**
+
+
+**6. What is volatile?**
+
+
+**7. What is static variable, class and method?**
+
+
+**8. What is static block? When does this get executed?**
+
+
+**9. What is init block?When does this get executed?**
+
+
+**10. What is thread interning?**
+
+
+**11. What is difference between Annoymous Inner Class and Lambda Exp.?**
+
+
+**12. What are the checked and unchecked exceptions?**
+
+
+**13. What is the difference between exception and error?**
+
+
+**14. What is dependecy injection?**
+
+
+**15. What is HashCode?**
 
 
 ## String
-###### 1. What is String interning?
-###### 2. What is String pool?
+**1. What is String interning?**
+
+
+**2. What is String pool?**
 
 ## Multithreading
-###### 1. What is thread interning?
-###### 2. What is the lifecycle of a thread?
-###### 3. What is yield() method?
-###### 4. What is difference between process and thread?
-###### 5. What is join() method?
-###### 6. What is difference between wait() and sleep() method?
-###### 7. What is difference between wait() and join() method?
-###### 8. What is thread scheduler?
-###### 9. What is thread scheduler?
+**1. What is thread interning?**
+
+
+**2. What is the lifecycle of a thread?**
+
+
+**3. What is yield() method?**
+
+
+**4. What is difference between process and thread?**
+
+
+**5. What is join() method?**
+
+
+**6. What is difference between wait() and sleep() method?**
+
+
+**7. What is difference between wait() and join() method?**
+
+**8. What is thread scheduler?**
+
+
+**9. What is thread scheduler?**
+
 ###### 10. What is Looper?
 ###### 11. Why the notify() and notifyAll() methods are part of Object class instead of Thread classh?
 ###### 12. What is thread pool?
