@@ -74,7 +74,6 @@ The following combinations of the instance, class methods and variables are vali
 Static classes are basically a way of grouping classes together in Java. Java doesn't allow you to create top-level static classes; only nested (inner) static classes.
 
 Reasons to use static inner class:
-
 *Grouping classes that will be used only in one place increases encapsulation.
 *The code is brought closer to the place that will be only one to use it; this increases readability and code is more maintainable.
 *If nested class doesn’t require any access to it’s enclosing class instance members, then it’s better to declare it as static because this way, it won’t be coupled to the outer class and hence will be more optimal as they won’t require any heap or stack memory.
