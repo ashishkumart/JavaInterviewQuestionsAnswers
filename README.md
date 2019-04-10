@@ -84,6 +84,12 @@ Reasons to use static inner class
 
 **8. What is static block? When does this get executed?**
 
+A static block is used for initializing static variables. Although static variables can be initialized directly during declaration, there are situations when we’re required to do the multiline processing.
+In such cases, static blocks come in handy. If static variables require additional, multi-statement logic while initialization, then a static block can be used.
+
+1. A class can have multiple static blocks
+2. Static fields and static blocks are resolved and executed in the same order as they are present in the class
+3. Static block is executed when the class is loaded
 
 **9. What is init block?When does this get executed?**
 
