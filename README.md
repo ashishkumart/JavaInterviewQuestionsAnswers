@@ -2,20 +2,26 @@
 Core Java Interview questions and answers
 
 ## General
-###### 1. What is Annotation?
-###### 1. What is reflection?
-###### 1. What is String interning?
-###### 1. What is difference between Serializable and Externalizable interface?
-###### 1. What is volatile?
-###### 1. What is static variable, class and method?
-###### 1. What is static block? When does this get executed?
-###### 1. What is init block?When does this get executed?
-###### 1. What is thread interning?
-###### 1. What is difference between Annoymous Inner Class and Lambda Exp.?
+###### 1. What is the latest version of Java SE?
+###### 2. What is Annotation?
+###### 3. What is reflection?
+###### 4. What is String interning?
+###### 5. What is difference between Serializable and Externalizable interface?
+###### 6. What is volatile?
+###### 7. What is static variable, class and method?
+###### 8. What is static block? When does this get executed?
+###### 9. What is init block?When does this get executed?
+###### 10. What is thread interning?
+###### 11. What is difference between Annoymous Inner Class and Lambda Exp.?
+###### 12. What are the checked and unchecked exceptions?
+###### 13. What is the difference between exception and error?
+###### 14. What is dependecy injection?
+###### 15. What is HashCode?
+
 
 ## String
 ###### 1. What is String interning?
-###### 1. What is String pool?
+###### 2. What is String pool?
 
 ## Multithreading
 ###### 1. What is thread interning?
@@ -30,28 +36,31 @@ Core Java Interview questions and answers
 ###### 10. What is Looper?
 ###### 11. Why the notify() and notifyAll() methods are part of Object class instead of Thread classh?
 ###### 12. What is thread pool?
-###### 12. What is difference betweeen == operator and equals() method?
-###### 12. What is Autoboxing and Unboxing?
-###### 1. What is the differenve between Comparable and Comparator?
+###### 13. What is difference betweeen == operator and equals() method?
+###### 14. What is Autoboxing and Unboxing?
+###### 15. What is the differenve between Comparable and Comparator?
+###### 16. What are the synchronous and asynchronous?
 
 ## Object Oriented Programming
 ###### 1. What is thread interning?
-###### 1. What is encapsulation?
-###### 1. What is polumorphism?
-###### 1. What is compile time and runtime polymorphism?
-###### 1. Why return type does not play role in method overloading.
-###### 1. What is upcasting in Java?
-###### 1. What is default method in Java?
-###### 1. What is difference between interface and abstract class(after Java 8)?
-###### 1. What is difference between default method and static method?
-###### 1. What is Enum in Java?
-###### 1. What is Generics?
-###### 1. What are the interfaces that are implemented in String class?
+###### 2. What is encapsulation?
+###### 3. What is polumorphism?
+###### 4. What is compile time and runtime polymorphism?
+###### 5. Why return type does not play role in method overloading?
+###### 6. What is upcasting in Java?
+###### 7. What is default method in Java?
+###### 8. What is difference between interface and abstract class(after Java 8)?
+###### 9. What is difference between default method and static method?
+###### 10. What is Enum in Java?
+###### 11. What is Generics?
+###### 12. What are the interfaces that are implemented in String class?
+###### 13. Can we create objetc of interface and abstract class?
+###### 14. What is Constructor chaning?
 
 
 ## Java Features
 ###### 1. What are the features of Java 8?
-###### 1. What are the features of Java 12?
+###### 2. What are the features of Java 12?
 
 ## Java Collection
 ###### 1. What is Collection?
@@ -62,23 +71,26 @@ Core Java Interview questions and answers
 ###### 6. What is LinkedList?
 ###### 7. What is Queue?
 ###### 8. What is Set?
-###### 8. What is Vector?
-###### 8. What is Stack?
-###### 8. What is TreeSet?
-###### 8. What is HashSet?
-###### 9. What is difference between ArrayList and LinkedList?
-###### 10. What is difference between ArrayList and Vector?
-###### 11. What is difference between Set and LinkedList?
-###### 12. What is LinkedHashMap?
+###### 9. What is Vector?
+###### 10. What is Stack?
+###### 11. What is TreeSet?
+###### 12. What is HashSet?
+###### 13. What is difference between ArrayList and LinkedList?
+###### 14. What is difference between ArrayList and Vector?
+###### 15. What is difference between Set and LinkedList?
+###### 16. What is LinkedHashMap?
+###### 17. What is Iterator?
+###### 18. What is Stream API?
 
 ## Design Pattern
 ###### 1. What is design pattern and it's type?
-###### 1. What is observer observable pattern?
-###### 1. What is thread interning?
-###### 1. How to create singleton class?
-###### 1. How to create immutable class?
-###### 1. What will happen if I create a clone of singleton object?
-###### 1. What are the difference between MVP and MVVM?
+###### 2. What is observer observable pattern?
+###### 3. What is singleton pattern?
+###### 4. What is thread interning?
+###### 5. How to create singleton class?
+###### 6. How to create immutable class?
+###### 7. What will happen if I create a clone of singleton object?
+###### 8. What are the difference between MVP and MVVM?
 
 
 
