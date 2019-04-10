@@ -3,7 +3,19 @@ Core Java Interview questions and answers
 
 ## General
 ###### 1. What is the latest version of Java SE?
+Java SE 12 (March 2019).
+
 ###### 2. What is Annotation?
+Annotations are tags that we can enter in our program code, for some tool to process it, and make sence of it.
+1) Annotation starts with @
+2) Annotation do not change the action of compiled program.
+3) Annotations can change the way a program is teated by compiler 
+
+There are three categories of Annotations
+1) Marker Annotations: like @Override
+2) Single value annotations: 
+3) Full Annotations
+
 ###### 3. What is reflection?
 ###### 4. What is String interning?
 ###### 5. What is difference between Serializable and Externalizable interface?
