@@ -73,18 +73,13 @@ The following combinations of the instance, class methods and variables are vali
 ###### Static class
 Static classes are basically a way of grouping classes together in Java. Java doesn't allow you to create top-level static classes; only nested (inner) static classes.
 
-Reasons to use static inner class
+Reasons to use static inner class:
 
 *Grouping classes that will be used only in one place increases encapsulation.
-
 *The code is brought closer to the place that will be only one to use it; this increases readability and code is more maintainable.
-
 *If nested class doesn’t require any access to it’s enclosing class instance members, then it’s better to declare it as static because this way, it won’t be coupled to the outer class and hence will be more optimal as they won’t require any heap or stack memory.
-
 *Static nested classes do not have access to any instance members of the enclosing outer class; it can only access them through an object’s reference.
-
 *Static nested classes can access all static members of the enclosing class, including private ones.
-
 *Java programming specification doesn’t allow us to declare the top-level class as static; only classes within the classes (nested classes) can be made as static.
 
 **8. What is static block? When does this get executed?**
