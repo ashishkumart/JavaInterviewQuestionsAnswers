@@ -20,16 +20,28 @@ There are three categories of Annotations
 
 **3. What is reflection?**
 
-"Java reflection makes it possible to inspect classes, interfaces, fields, and methods at runtime, without knowing the names of clesses, methods etc. at compile time.
-It is also possible to instantiate new objects and get/set the values using reflection."
+Java reflection makes it possible to inspect classes, interfaces, fields, and methods at runtime, without knowing the names of clesses, methods etc. at compile time.
+It is also possible to instantiate new objects and get/set the values using reflection.
 
 **4. What is String interning?**
 
+String Interning is a method of storing only one copy of each distinct String value, which must be immutable.
 
 **5. What is difference between Serializable and Externalizable interface?**
 
+1) Serializable is a marker interface which doesnot have any method, whereas Externalizable interface contains two methods readExternal() and writeExternal().
+2) Serializable uses reflection to construct object and does not require no-args constructor, whereas Externalizable requires public no-args constructor.
 
 **6. What is volatile?**
+
+Volatile keyword makes sure that the changes made in one thread are immediately reflect in other thread.
+
+`class SharedObj
+{
+   static volatile int sharedVar = 6;
+}`
+
+Note that volatile should not be confused with static modifier. static variables are class members that are shared among all objects. There is only one copy of them in main memory.
 
 
 **7. What is static variable, class and method?**
