@@ -3,9 +3,11 @@ Core Java Interview questions and answers
 
 ## General
  **1. What is the latest version of Java SE?**
+ 
 Java SE 12 (March 2019).
 
 **2. What is Annotation?**
+
 Annotations are tags that we can enter in our program code, for some tool to process it, and make sence of it.
 1) Annotation starts with @
 2) Annotation do not change the action of compiled program.
