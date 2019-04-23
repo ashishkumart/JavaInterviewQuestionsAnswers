@@ -93,6 +93,19 @@ In such cases, static blocks come in handy. If static variables require addition
 
 **9. What is init block?When does this get executed?**
 
+Instance initialization block / Init block are used to initialize data members, its is executed whenever class is initialized and before constructors are invoked.
+
+`class Example {
+
+      // Instance Initialization Block 
+    {  
+        System.out.println("IIB block"); 
+    }
+    
+      public Example(){
+           
+      }
+}`
 
 **10. What is thread interning?**
 
