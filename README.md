@@ -95,14 +95,14 @@ In such cases, static blocks come in handy. If static variables require addition
 
 Instance initialization block / Init block are used to initialize data members, its is executed whenever class is initialized and before constructors are invoked.
 
-`class Example {
-
-      // Instance Initialization Block 
+`class Example 
+{
     {  
         System.out.println("IIB block"); 
     }
     
-      public Example(){
+      public Example()
+      {
            
       }
 }`
