@@ -95,8 +95,10 @@ In such cases, static blocks come in handy. If static variables require addition
 
 Instance initialization block / Init block are used to initialize data members, its is executed whenever class is initialized and before constructors are invoked.
 
-`class Example 
+```
+class Example 
 {
+    // Instance initialization block
     {  
         System.out.println("IIB block"); 
     }
@@ -105,7 +107,8 @@ Instance initialization block / Init block are used to initialize data members, 
       {
            
       }
-}`
+}
+```
 
 **10. What is thread interning?**
 
