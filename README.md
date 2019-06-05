@@ -115,6 +115,11 @@ class Example
 
 **11. What is difference between Annoymous Inner Class and Lambda Exp.?**
 
+- Lambda Expression work with Single Abstract Method (SAM) types that is Interface with single abstract method. It will fail as soon as your interface contains more than one abstract method.
+That is where Anonymous class is used.
+
+- At runtime annonymous class require class loading, memory allocation, and object initialization and invoking of non static method, whereas lambda expression is pure compile time activity.
+
 
 **12. What are the checked and unchecked exceptions?**
 
