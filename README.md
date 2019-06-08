@@ -123,16 +123,13 @@ That is where Anonymous class is used.
 
 **12. What are the checked and unchecked exceptions?**
 
-Checked Exception:
-
+###### Checked Exception:
 The classes which directly inherit Throwable class except RuntimeException and Error are known as checked exceptions e.g. IOException, SQLException etc. Checked exceptions are checked at compile-time.
 
-Unchecked Exception: 
-
+###### Unchecked Exception: 
 The classes which inherit RuntimeException are known as unchecked exceptions e.g. ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException etc. Unchecked exceptions are not checked at compile-time, but they are checked at runtime.
 
-Error:
-
+###### Error:
 Error is irrecoverable e.g. OutOfMemoryError, VirtualMachineError, AssertionError etc.
 
 **13. What is the difference between exception and error?**
