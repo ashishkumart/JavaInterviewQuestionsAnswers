@@ -143,10 +143,15 @@ An Error "indicates serious problems that a reasonable application should not tr
 Errors are also unchecked exception & the programmer is not required to do anything with these. In fact it is a bad idea to use a try-catch clause for Errors. Most often, recovery from an Error is not possible & the program should be allowed to terminate. Examples include `OutOfMemoryError`, `StackOverflowError`, etc.
 
 **14. What is dependecy injection?**
+Dependency injection is a concept, and according to this a class should not configure its dependencies statically but it should configured from outside.
+A class has a dependency if it uses an instance of another class.
 
+Let’s say we have a car class which contains various objects such as wheels, engine, etc. Inside the Car class we are creating the Wheel and Battery. Now if someday we want to change the brand/company of the wheen and battery, we have to create a new Car object with desired wheel and battery brand. BUT if we use DI, we can change the wheel and battery brand at runtime, by providing these two dependecy from outside.
 
 **15. What is HashCode?**
-
+Hash code is an unique integer value for unique object that is returned by `hashCode()` method of Object class.
+This method is also used to search a value in collection.
+JVM uses hashCode method while saving object into hashing related data structure.
 
 ## String
 **1. What is String interning?**
@@ -156,9 +161,37 @@ Errors are also unchecked exception & the programmer is not required to do anyth
 
 ## Multithreading
 **1. What is thread interning?**
-
+String Interning is a method of storing only one copy of each distinct String Value, which must be immutable.
 
 **2. What is the lifecycle of a thread?**
+A thread is an independent path of execution in the program. Multiple threads can run concurrently with in a program.
+A thread lies only in one of the shown states at any instant:
+
+1- New
+2- Runnable
+3- Blocked/Waiting
+4- Timed Waiting
+5- Terminated
+
+###### 1. New State:
+When a new thread is created, it is in the new state. The thread has not yet started to run when thread is in this state. When a thread lies in the new state, it’s code is yet to be run and hasn’t started to execute.
+
+###### 2. Runnable State:
+A thread that is ready to run is moved to runnable state. In this state, a thread might actually be running or it might be ready run at any instant of time. It is the responsibility of the thread scheduler to give the thread, time to run.
+
+###### 3. Blocked/Waiting State:
+When a thread is temporarily inactive, then it’s in one of the following states:
+Blocked
+Waiting
+For example, when a thread is waiting for I/O to complete, it lies in the blocked state. It’s the responsibility of the thread scheduler to reactivate and schedule a blocked/waiting thread. A thread in this state cannot continue its execution any further until it is moved to runnable state. Any thread in these states does not consume any CPU cycle.
+
+###### 4. Timed Waiting State:
+A thread lies in timed waiting state when it calls a method with a time out parameter. A thread lies in this state until the timeout is completed or until a notification is received. For example, when a thread calls sleep or a conditional wait, it is moved to a timed waiting state.
+
+###### 5. Terminated State:
+A thread terminates because of either of the following reasons:
+- Because it exists normally. This happens when the code of thread has entirely executed by the program.
+- Because there occurred some unusual erroneous event, like segmentation fault or an unhandled exception.
 
 
 **3. What is yield() method?**
