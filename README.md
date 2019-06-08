@@ -134,6 +134,13 @@ Error is irrecoverable e.g. OutOfMemoryError, VirtualMachineError, AssertionErro
 
 **13. What is the difference between exception and error?**
 
+###### Exception:
+An Exception "indicates conditions that a reasonable application might want to catch."
+
+###### Error:
+An Error "indicates serious problems that a reasonable application should not try to catch."
+
+Errors are also unchecked exception & the programmer is not required to do anything with these. In fact it is a bad idea to use a try-catch clause for Errors. Most often, recovery from an Error is not possible & the program should be allowed to terminate. Examples include `OutOfMemoryError`, `StackOverflowError`, etc.
 
 **14. What is dependecy injection?**
 
