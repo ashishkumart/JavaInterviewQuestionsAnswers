@@ -143,12 +143,14 @@ An Error "indicates serious problems that a reasonable application should not tr
 Errors are also unchecked exception & the programmer is not required to do anything with these. In fact it is a bad idea to use a try-catch clause for Errors. Most often, recovery from an Error is not possible & the program should be allowed to terminate. Examples include `OutOfMemoryError`, `StackOverflowError`, etc.
 
 **14. What is dependecy injection?**
+
 Dependency injection is a concept, and according to this a class should not configure its dependencies statically but it should configured from outside.
 A class has a dependency if it uses an instance of another class.
 
 Let’s say we have a car class which contains various objects such as wheels, engine, etc. Inside the Car class we are creating the Wheel and Battery. Now if someday we want to change the brand/company of the wheen and battery, we have to create a new Car object with desired wheel and battery brand. BUT if we use DI, we can change the wheel and battery brand at runtime, by providing these two dependecy from outside.
 
 **15. What is HashCode?**
+
 Hash code is an unique integer value for unique object that is returned by `hashCode()` method of Object class.
 This method is also used to search a value in collection.
 JVM uses hashCode method while saving object into hashing related data structure.
@@ -161,9 +163,11 @@ JVM uses hashCode method while saving object into hashing related data structure
 
 ## Multithreading
 **1. What is thread interning?**
+
 String Interning is a method of storing only one copy of each distinct String Value, which must be immutable.
 
 **2. What is the lifecycle of a thread?**
+
 A thread is an independent path of execution in the program. Multiple threads can run concurrently with in a program.
 A thread lies only in one of the shown states at any instant:
 
