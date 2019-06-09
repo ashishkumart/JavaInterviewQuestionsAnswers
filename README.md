@@ -110,8 +110,30 @@ class Example
 }
 ```
 
-**10. What is thread interning?**
+**10. What is Generics in Java?**
 
+Generics enables types like Integer, String, User Defined types to be parameters when defining classes, interfaces and methods.
+
+BENEFITS:
+
+-  Type parameters provide a way to reuse the same code with different inputs.
+
+- Strong type check at compile time.
+
+- Elimination of type cast.
+
+`
+// Non-Generic
+
+List list = new ArrayList();
+list.add("Ashish");
+String name = (String)list.get(0); // Casting is required
+
+// Generic
+List<String> list = new ArrayList<>();
+list.add("Ashish");
+String name = list.get(0); // No Casting is required
+`
 
 **11. What is difference between Annoymous Inner Class and Lambda Exp.?**
 
