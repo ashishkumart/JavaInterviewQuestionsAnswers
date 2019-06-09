@@ -178,8 +178,11 @@ JVM uses hashCode method while saving object into hashing related data structure
 ## String
 **1. What is String interning?**
 
+String Interning is a method of storing only one copy of each distinct String Value, which must be immutable.
 
 **2. What is String pool?**
+
+String pool is special memory area where Strings are stored by JVM. The JVM can optimize the anount of memory allocated for the Strings by storing only one copy of each string literal in the pool. When we create a string variable and assign value to it JVM searches pool for value of the string. If found, Java compiler returns a reference to it's memory address.
 
 ## Multithreading
 **1. What is thread interning?**
@@ -284,10 +287,23 @@ When we execute somethng asynchroously we can move on another task before it fin
 ## Object Oriented Programming
 ###### 1. What is thread interning?
 ###### 2. What is encapsulation?
-###### 3. What is polumorphism?
-###### 4. What is compile time and runtime polymorphism?
+
+**3. What is polumorphism?**
+
+Polymorphism is a concept in which we can perform a single action in different ways.
+
+**4. What is compile time and runtime polymorphism?**
+
+**Dynamic Method Dispatch/Dynamic Binding/ Runtime Polymorphism** is a process in whitch call to an overridden method is resolved at runtime rather than compile time. In this process an overridden method is called through reference variable of super class. Determination of the method to be called is based on the object is being referred to by reference variable.
+
 ###### 5. Why return type does not play role in method overloading?
-###### 6. What is upcasting in Java?
+**6. What is upcasting in Java?**
+
+If the reference variable of Parent class referes to the object of child class, its is known as Upcasting.
+Example: We have a class A and class B. Class B extends class A. so we can write below:
+
+`A a = new B()`
+
 ###### 7. What is default method in Java?
 ###### 8. What is difference between interface and abstract class(after Java 8)?
 ###### 9. What is difference between default method and static method?
@@ -295,8 +311,15 @@ When we execute somethng asynchroously we can move on another task before it fin
 ###### 11. What is Generics?
 ###### 12. What are the interfaces that are implemented in String class?
 ###### 13. Can we create objetc of interface and abstract class?
-###### 14. What is Constructor chaning?
+**14. What is Constructor chaning?**
 
+Constructor Chaining is the process of calling one constructor from another constructor with respect to current object.
+Constructor Chianing can be done in two ways.
+
+1- Within class using this()
+2- From base class  using super() (inheritance is needed)
+
+Super and this statements should always be the first line of the cunstrctor.
 
 ## Java Features
 ###### 1. What are the features of Java 8?
