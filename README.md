@@ -122,10 +122,8 @@ BENEFITS:
 
 - Elimination of type cast.
 
-`
-// Non-Generic
-
-List list = new ArrayList();
+```
+List list = new ArrayList(); // Non-Generic
 list.add("Ashish");
 String name = (String)list.get(0); // Casting is required
 
@@ -133,7 +131,7 @@ String name = (String)list.get(0); // Casting is required
 List<String> list = new ArrayList<>();
 list.add("Ashish");
 String name = list.get(0); // No Casting is required
-`
+```
 
 **11. What is difference between Annoymous Inner Class and Lambda Exp.?**
 
