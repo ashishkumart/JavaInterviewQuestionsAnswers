@@ -294,7 +294,7 @@ Polymorphism is a concept in which we can perform a single action in different w
 
 **4. What is compile time and runtime polymorphism?**
 
-**Dynamic Method Dispatch/Dynamic Binding/ Runtime Polymorphism** is a process in whitch call to an overridden method is resolved at runtime rather than compile time. In this process an overridden method is called through reference variable of super class. Determination of the method to be called is based on the object is being referred to by reference variable.
+*Dynamic Method Dispatch/Dynamic Binding/ Runtime Polymorphism* is a process in whitch call to an overridden method is resolved at runtime rather than compile time. In this process an overridden method is called through reference variable of super class. Determination of the method to be called is based on the object is being referred to by reference variable.
 
 ###### 5. Why return type does not play role in method overloading?
 **6. What is upcasting in Java?**
@@ -304,7 +304,10 @@ Example: We have a class A and class B. Class B extends class A. so we can write
 
 `A a = new B()`
 
-###### 7. What is default method in Java?
+**7. What is default method in Java?**
+
+Before Java 8, interfaces could have only abstract methods. The implementation of these methods has to be provided in a separate class. So, if a new method is to be added in an interface, then its implementation code has to be provided in the class implementing the same interface. To overcome this issue, Java 8 has introduced the concept of default methods which allow the interfaces to have methods with implementation without affecting the classes that implement the interface
+
 ###### 8. What is difference between interface and abstract class(after Java 8)?
 ###### 9. What is difference between default method and static method?
 ###### 10. What is Enum in Java?
