@@ -200,30 +200,66 @@ A thread terminates because of either of the following reasons:
 
 **3. What is yield() method?**
 
+`yield()` method is use to prevent the execution of a thread in between if something important is pending. yield basically means that the thread is not doing anything particularly important and if any other thread need to be run, they should run. Otherwise the current thread will be continued. Its gives hint to the thread schedular that its ready to pause its execution. Thread schedular is free to ignore this hint. IF ANY THREAD EXECUTES YIELD METHOD, THREAD SCHEDULAR CHECKS IF THERE IS ANY THREAD WITH HIGHER OR SAME PRIORITY THAN THIS THREAD. IF SCHEDULAR FINDS ANY THREAD CURRENT THREAD WILL BE MOVED TO READY/RUNNABLE STATE AND GIVE PROCESSOR TO OTHER THREAD, IF NOT CURRENT THREAD WILL KEEP EXECUTING.
+
+`Thread.yield();`
 
 **4. What is difference between process and thread?**
 
+Process is basically a program in execution whereas Thread is a lightweight process or subprocess. 
 
 **5. What is join() method?**
 
+`join()` method puts the current thread on wait until the thread on which it is called is dead. 
+Its can be used to create a execution sequence for multiple thread to execute.
 
 **6. What is difference between wait() and sleep() method?**
 
+There is a difference between `wait()` and `sleep()`. `wait()` will wait until the timeout expires or the thread finishes. 
+`sleep()` will just wait for the specified amount of time unless interrupted. So it is perfectly possible for `join()` to return much faster than the specified time.
 
 **7. What is difference between wait() and join() method?**
 
+`wait()` is declared in Object class whereas `join()` is declared in Thread.
+
 **8. What is thread scheduler?**
 
+A thread scheduler is the part of the operating system in charge of deciding which threads in the system should run, when, and for how long. Android’s thread scheduler uses two main factors to determine how threads are scheduled across the entire system: nice values and cgroups.
 
 **9. What is thread scheduler?**
 
-###### 10. What is Looper?
+**10. What is Looper?**
+
+Looper is a class which is used to execute messages(runnable) in a queue. It is responsible to create a queue in a thread.
+
 ###### 11. Why the notify() and notifyAll() methods are part of Object class instead of Thread classh?
-###### 12. What is thread pool?
-###### 13. What is difference betweeen == operator and equals() method?
+
+**12. What is thread pool?**
+
+A thread pool is a collection of threads, it reuses previously created threads to execute current task and offers a solution to the problem of resource thrashing and time consuming
+
+**13. What is difference betweeen == operator and equals() method?**
+
+We use == for reference (address) comparision and equals() method for content comparision.
+== is an operater and equals() is a method.
+
 ###### 14. What is Autoboxing and Unboxing?
-###### 15. What is the differenve between Comparable and Comparator?
-###### 16. What are the synchronous and asynchronous?
+**15. What is the differenve between Comparable and Comparator?**
+
+Comparable
+
+1- Comparable interface is a default interface for sorting the objects in Java. All the classes like String, Integer have implemented the comparable interface.
+2- Comparable interface provides compareTo(Object o) method for specifying the sorting logic.
+
+Comparator
+
+1- Comparator interface is used when the class have not implemented comparable interface, or you have to provide your own/different sorting logic.
+2- Comparator interface provides compare(Object ob1, Object ob2) for specifying the sorting logic.
+
+**16. What are the synchronous and asynchronous?**
+
+When we execute something synchronously, we wait for it to finish before moving on to another task.
+When we execute somethng asynchroously we can move on another task before it finishes.
 
 ## Object Oriented Programming
 ###### 1. What is thread interning?
